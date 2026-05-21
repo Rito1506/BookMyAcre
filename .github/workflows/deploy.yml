@@ -21,8 +21,11 @@ jobs:
       - name: Install Dependencies
         run: npm install --legacy-peer-deps
 
+      - name: Fix Vite Permission
+        run: chmod +x node_modules/.bin/vite
+
       - name: Build Project
-        run: npm run build
+        run: node node_modules/vite/bin/vite.js build
 
       - name: Deploy to GoDaddy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
