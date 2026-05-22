@@ -393,11 +393,11 @@ export default function HomePage() {
         </div>
 
         {/* floating stat badges */}
-        <div className="hero__badge hero__badge--left">
+        <div className="hero__badge hero__badge--1">
           <strong>5,000+</strong>
           <span>Happy Customers</span>
         </div>
-        <div className="hero__badge hero__badge--right">
+        <div className="hero__badge hero__badge--2">
           <strong>20+</strong>
           <span>Years Network</span>
         </div>

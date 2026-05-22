@@ -84,14 +84,14 @@
   color: var(--text-muted);
 }
 
-.hero__badge--left {
-  left: 2rem;
-  top: 30%;
+.hero__badge--1 {
+  right: 2rem;
+  top: 25%;
 }
 
-.hero__badge--right {
+.hero__badge--2 {
   right: 2rem;
-  top: 45%;
+  top: 40%;
 }
 
 .hero__slide {
