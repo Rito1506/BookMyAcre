@@ -31,45 +31,45 @@ const slides = [
 
 const highlights = [
   {
-    icon: "/img/final icons/6.png",
+    icon: "/img/final-icons/6.png",
     text: "Noida’s No.1 Farmland & Plot Investment Experts Trusted guidance for premium farmland, plots, and investment properties.",
   },
   {
-    icon: "/img/final icons/12.png",
+    icon: "/img/final-icons/12.png",
     text: "Immediate Registry & Mutation Support Complete legal assistance for smooth registration and ownership transfer.",
   },
   {
-    icon: "/img/final icons/10.png",
+    icon: "/img/final-icons/10.png",
     text: "24×7 Customer Assistance Dedicated support team available anytime for investor queries and updates.",
   },
   {
-    icon: "/img/final icons/14.png",
+    icon: "/img/final-icons/14.png",
     text: "2000+ Happy & Satisfied Investors A growing community of successful investors trusting Book My Acre.",
   },
   {
-    icon: "/img/final icons/2.png",
+    icon: "/img/final-icons/2.png",
     text: "20+ Successful Projects Delivered Proven track record in farmland, plotting, and investment developments.",
   },
 ];
 
 const services = [
   {
-    icon: "/img/final icons/15.png",
+    icon: "/img/final-icons/15.png",
     title: "Premium Land Consultation",
     desc: "Expert guidance for farmland, farmhouse plots & high-growth land investment across Noida, Yamuna Expressway and Dholera.",
   },
   {
-    icon: "/img/final icons/1.png",
+    icon: "/img/final-icons/1.png",
     title: "Guided Site Visits",
     desc: "Explore verified farm plots, strategic location and future ready investment corridors with expert assistance.",
   },
   {
-    icon: "/img/final icons/10.png",
+    icon: "/img/final-icons/10.png",
     title: "Secure Documentation Support",
     desc: "Clear titles, Legal verification and transparent paperwork for safe and hassle-free land investment",
   },
   {
-    icon: "/img/final icons/13.png",
+    icon: "/img/final-icons/13.png",
     title: "Smart Investment Planning",
     desc: "Data-driven insights for high appreciation farmland, plotted developments and long-term real estate growth",
   },

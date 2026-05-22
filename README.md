@@ -21,7 +21,7 @@ bookmyacre/
 │   │   ├── projects/        1.png … 8.png, neo_farms.png
 │   │   ├── bg/              about.jpg, blog.jpg, contacts.jpg, projects.jpg, text-1.jpg
 │   │   ├── blog/            1-760x514.jpg, 2-760x514.jpg, 3-760x514.jpg
-│   │   └── final icons/     1.png, 2.png, 6.png, 10.png, 12.png, 13.png, 14.png, 15.png
+│   │   └── final-icons/     1.png, 2.png, 6.png, 10.png, 12.png, 13.png, 14.png, 15.png
 └── src/
     ├── main.jsx             # React entry
     ├── App.jsx              # Router + layout
@@ -60,7 +60,7 @@ ace.webp, dasnac.png, escon.webp, M3M-Logo-1.jpg, purvanchal-logo.png
 img/slider/slide1.png, slide2.png, slide3.png
 img/projects/1.png … 8.png, neo_farms.png
 img/bg/about.jpg, blog.jpg, contacts.jpg, projects.jpg, text-1.jpg
-img/final icons/1.png, 2.png, 6.png, 10.png, 12.png, 13.png, 14.png, 15.png
+img/final-icons/1.png, 2.png, 6.png, 10.png, 12.png, 13.png, 14.png, 15.png
 img/blog/1-760x514.jpg, 2-760x514.jpg, 3-760x514.jpg
 ```
 

@@ -10,22 +10,22 @@ const team = [
 
 const values = [
   {
-    icon: "/img/final icons/6.png",
+    icon: "/img/final-icons/6.png",
     title: "Transparency",
     desc: "Every transaction is clear, with zero hidden costs or surprises.",
   },
   {
-    icon: "/img/final icons/12.png",
+    icon: "/img/final-icons/12.png",
     title: "Expertise",
     desc: "Deep local market knowledge built over a decade of focused land sales.",
   },
   {
-    icon: "/img/final icons/10.png",
+    icon: "/img/final-icons/10.png",
     title: "Trust",
     desc: "Verified land parcels and legally clear documentation at every step.",
   },
   {
-    icon: "/img/final icons/2.png",
+    icon: "/img/final-icons/2.png",
     title: "Client First",
     desc: "Personalized guidance tailored to your investment goals and timeline.",
   },
