@@ -324,9 +324,9 @@ img {
 .whatsapp-fab {
   position: fixed;
   right: 1.25rem;
-  bottom: 1.25rem;
-  width: 56px;
-  height: 56px;
+  bottom: 0.5rem;
+  width: 47px;
+  height: 47px;
   border-radius: 50%;
   background: #25d366;
   display: flex;

@@ -22,13 +22,10 @@ function ScrollToTop() {
 }
 
 function Layout() {
-  const { pathname } = useLocation();
-  const isHome = pathname === "/";
-
   return (
     <>
       <Loader />
-      <Navbar isHome={isHome} />
+      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />

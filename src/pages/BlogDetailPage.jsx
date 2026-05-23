@@ -8,7 +8,7 @@ export default function BlogDetailPage() {
 
   if (!post) {
     return (
-      <div className="inner-page" style={{ paddingTop: "120px" }}>
+      <div className="inner-page inner-page--padded">
         <section className="section">
           <div className="container" style={{ textAlign: "center" }}>
             <h2>Article not found</h2>

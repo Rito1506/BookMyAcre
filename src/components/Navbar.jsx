@@ -10,21 +10,20 @@ const navLinks = [
   { to: "/contact", label: "Contact Us" },
 ];
 
-export default function Navbar({ isHome }) {
-  const [scrolled, setScrolled] = useState(false);
+export default function Navbar() {
   const [progress, setProgress] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 60);
       const docHeight =
         document.documentElement.scrollHeight - window.innerHeight;
       const pct = docHeight > 0 ? (window.scrollY / docHeight) * 100 : 0;
       setProgress(Math.min(100, Math.max(0, pct)));
     };
     window.addEventListener("scroll", handleScroll);
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -32,21 +31,13 @@ export default function Navbar({ isHome }) {
     setMenuOpen(false);
   }, [location]);
 
-  const navClass = [
-    "navbar",
-    isHome && !scrolled ? "navbar--transparent" : "navbar--solid",
-    scrolled ? "navbar--scrolled navbar--glass" : "",
-  ]
-    .filter(Boolean)
-    .join(" ");
-
   return (
-    <nav className={navClass}>
+    <nav className="navbar">
       <div className="navbar__progress" style={{ width: `${progress}%` }} />
       <div className="navbar__inner container">
         <Link to="/" className="navbar__logo">
           <img
-            src={isHome && !scrolled ? "/bma_white_.png" : "/bma.png"}
+            src="/bma_white_.png"
             alt="BookMyAcre"
             className="navbar__logo-img"
           />
@@ -83,6 +74,7 @@ export default function Navbar({ isHome }) {
           className={`navbar__hamburger ${menuOpen ? "navbar__hamburger--open" : ""}`}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
         >
           <span />
           <span />

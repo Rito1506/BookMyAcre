@@ -7,21 +7,21 @@ import "./HomePage.css";
 // ── Data ─────────────────────────────────────────────────────────────────
 const slides = [
   {
-    img: "/img/slider/slide3.png",
+    img: "/img/slider/slide3.avif",
     title: "Find Premium Plots",
     subtitle:
       "Verified land investments, Clear titles, Prime locations, High returns",
     cta: { label: "Explore Now", to: "/contacts" },
   },
   {
-    img: "/img/slider/slide2.png",
+    img: "/img/slider/slide2.avif",
     title: "Premium Farmhouse Land",
     subtitle:
       "Luxury farm plots in prime location, Farmhouse plots, Gated community, High Growth",
     cta: { label: "Explore Farmhouses", to: "/contacts" },
   },
   {
-    img: "/img/slider/slide1.png",
+    img: "/img/slider/slide1.avif",
     title: "Own Your Farmhouse Plots",
     subtitle:
       "Smart investment for your future, Near jewar airport, Weekend living, Secure investment",
@@ -77,43 +77,43 @@ const services = [
 
 const projects = [
   {
-    img: "/img/projects/3.png",
+    img: "/img/projects/3.webp",
     title: "Velotech City",
     category: "Dholera IST Project",
     href: "https://velotechcity.com/",
     external: true,
   },
   {
-    img: "/img/projects/1.png",
+    img: "/img/projects/1.webp",
     title: "Veda Farms",
     category: "Noida",
     href: "https://www.vedafarms.in",
     external: true,
   },
   {
-    img: "/img/projects/4.png",
+    img: "/img/projects/4.webp",
     title: "Escon Panorama",
     category: "Greater Noida West",
   },
-  { img: "/img/projects/5.png", title: "M3M Group", category: "NCR" },
+  { img: "/img/projects/5.webp", title: "M3M Group", category: "NCR" },
   {
-    img: "/img/projects/6.png",
+    img: "/img/projects/6.webp",
     title: "ACE Edit",
     category: "Sector 22D, Greater Noida",
   },
-  { img: "/img/projects/2.png", title: "ACE Hive", category: "Greater Noida" },
+  { img: "/img/projects/2.webp", title: "ACE Hive", category: "Greater Noida" },
   {
-    img: "/img/projects/7.png",
+    img: "/img/projects/7.webp",
     title: "ACE Acreville",
     category: "Noida Expressway",
   },
   {
-    img: "/img/projects/8.png",
+    img: "/img/projects/8.webp",
     title: "ACE Street",
     category: "Sector 150, Noida",
   },
   {
-    img: "/img/projects/neo_farms.png",
+    img: "/img/projects/neo_farms.webp",
     title: "NEO Farms",
     category: "Delhi NCR",
   },
@@ -157,9 +157,9 @@ const testimonials = [
 
 const tickerItems = [
   {
-    text: "New launch: NEO Farms — farm plots starting at ₹18L in Delhi NCR",
-    href: "/projects",
-    external: false,
+    text: "New Event: Jammu Meet — Property Buyers Meet in Jammu.| Register Yourself for the Events.",
+    href: "https://docs.google.com/forms/d/e/1FAIpQLSfGYYpi-yz_oN4o_yC00Kjv_kta3a_I1vVDidpx2RsuF96rbA/viewform?pli=1",
+    external: true,
   },
   {
     text: "Velotech City, Dholera IST — India's first greenfield smart city plots now open",
@@ -171,21 +171,21 @@ const tickerItems = [
     href: "https://www.vedafarms.in",
     external: true,
   },
-  {
-    text: "ACE Acreville on Noida Expressway — limited plots, site visits available this weekend",
-    href: "/contact",
-    external: false,
-  },
-  {
-    text: "M3M NCR — premium commercial land parcels with flexible payment plans",
-    href: "/projects",
-    external: false,
-  },
-  {
-    text: "Free land investment consultation — speak to our expert, zero obligations",
-    href: "/contact",
-    external: false,
-  },
+  // {
+  //   text: "ACE Acreville on Noida Expressway — limited plots, site visits available this weekend",
+  //   href: "/contact",
+  //   external: false,
+  // },
+  // {
+  //   text: "M3M NCR — premium commercial land parcels with flexible payment plans",
+  //   href: "/projects",
+  //   external: false,
+  // },
+  // {
+  //   text: "Free land investment consultation — speak to our expert, zero obligations",
+  //   href: "/contact",
+  //   external: false,
+  // },
 ];
 
 // ── Counter Hook ──────────────────────────────────────────────────────────
