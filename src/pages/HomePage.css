@@ -329,7 +329,7 @@
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: var(--primary);
+  background: red;
   flex-shrink: 0;
   opacity: 0.8;
 }

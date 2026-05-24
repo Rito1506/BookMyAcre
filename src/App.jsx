@@ -9,6 +9,8 @@ import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import BlogPage from "./pages/BlogPage";
 import BlogDetailPage from "./pages/BlogDetailPage";
+import EventsPage from "./pages/EventsPage";
+import EventDetailPage from "./pages/EventDetailPage";
 import ContactPage from "./pages/ContactPage";
 import CareerPage from "./pages/CareerPage";
 import PrivacyPage from "./pages/PrivacyPage";
@@ -32,6 +34,8 @@ function Layout() {
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:slug" element={<BlogDetailPage />} />
+        <Route path="/events" element={<EventsPage />} />
+        <Route path="/events/:slug" element={<EventDetailPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/career" element={<CareerPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />

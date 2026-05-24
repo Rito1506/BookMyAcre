@@ -171,21 +171,6 @@ const tickerItems = [
     href: "https://www.vedafarms.in",
     external: true,
   },
-  // {
-  //   text: "ACE Acreville on Noida Expressway — limited plots, site visits available this weekend",
-  //   href: "/contact",
-  //   external: false,
-  // },
-  // {
-  //   text: "M3M NCR — premium commercial land parcels with flexible payment plans",
-  //   href: "/projects",
-  //   external: false,
-  // },
-  // {
-  //   text: "Free land investment consultation — speak to our expert, zero obligations",
-  //   href: "/contact",
-  //   external: false,
-  // },
 ];
 
 // ── Counter Hook ──────────────────────────────────────────────────────────
@@ -220,7 +205,7 @@ function AchievementBox({ target, suffix, label }) {
       ([e]) => {
         if (e.isIntersecting) setInView(true);
       },
-      { threshold: 0.5 },
+      { threshold: 0.2 },
     );
     if (ref.current) obs.observe(ref.current);
     return () => obs.disconnect();
