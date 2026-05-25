@@ -1,9 +1,8 @@
 export const EVENT_TYPES = {
-  "site-visit": "Site Visits",
-  launch: "Launches",
-  expo: "Expos",
-  social: "Social",
-  milestone: "Milestones",
+  "sales-marketing": "Sales & Marketing Events",
+  "corporate-industry": "Corporate & Industry Events",
+  "community-client": "Community & Client Relations Events",
+  "construction-milestone": "Project Construction Milestones",
 };
 
 export const PLATFORM_LABELS = {
@@ -16,16 +15,16 @@ export const PLATFORM_LABELS = {
 
 export const events = [
   {
-    slug: "veda-farms-investor-walkthrough",
-    type: "site-visit",
+    slug: "BookMyAcre-Jammu-Event-Info",
+    type: "community-client",
     platform: "onsite",
-    date: "2026-05-10",
-    dateLabel: "10 May 2026",
-    location: "Noida",
-    title: "Investor walkthrough at Veda Farms",
+    date: "2026-05-31",
+    dateLabel: "31 May 2026",
+    location: "Jammu",
+    title: "Property Buyers Meet in Jammu",
     excerpt:
-      "50+ investors joined our guided site visit to explore premium farmhouse plots with verified titles.",
-    cover: "/img/projects/1.png",
+      "Join us for a property buyers meet in Jammu, where you can explore premium farmhouse plots with verified titles.",
+    cover: "/img/events/event1.jpeg",
     highlight: true,
     featured: true,
     gallery: [
@@ -34,15 +33,16 @@ export const events = [
       { src: "/img/projects/neo_farms.png", alt: "Plot layout overview" },
     ],
     body: [
-      "Our latest guided site visit at Veda Farms brought together investors from across Delhi NCR for a first-hand look at premium farmhouse plots.",
-      "The session covered plot selection, legal documentation, registry timelines, and long-term appreciation potential along the Noida corridor.",
+      "BookMyAcre is bringing an exclusive Property Buyer Meet in Jammu on 31st May 2026 at Zone By The Park, Jammu.",
+      "Explore premium investment opportunities across Noida, Greater Noida & Dholera Smart City with expert guidance, future growth insights & high appreciation projects.",
+      "This event is specially designed for investors, channel partners & property buyers looking for smart real estate opportunities in India’s fastest-growing investment corridors.",
     ],
-    externalUrl: "https://www.instagram.com/bookmyacreofficial/",
-    tags: ["veda farms", "site visit", "noida"],
+    externalUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfGYYpi-yz_oN4o_yC00Kjv_kta3a_I1vVDidpx2RsuF96rbA/viewform",
+    tags: ["bookmyacre", "jammu", "property buyers meet", "event"],
   },
   {
     slug: "sector-150-open-plot-day",
-    type: "launch",
+    type: "sales-marketing",
     platform: "onsite",
     date: "2026-04-22",
     dateLabel: "22 April 2026",
@@ -66,7 +66,7 @@ export const events = [
   },
   {
     slug: "noida-property-expo-2026",
-    type: "expo",
+    type: "corporate-industry",
     platform: "onsite",
     date: "2026-03-15",
     dateLabel: "15 March 2026",
@@ -91,7 +91,7 @@ export const events = [
   },
   {
     slug: "jewar-corridor-reel",
-    type: "social",
+    type: "sales-marketing",
     platform: "instagram",
     date: "2026-05-02",
     dateLabel: "2 May 2026",
@@ -114,7 +114,7 @@ export const events = [
   },
   {
     slug: "2000-investors-milestone",
-    type: "milestone",
+    type: "community-client",
     platform: "linkedin",
     date: "2026-02-01",
     dateLabel: "1 February 2026",
@@ -138,7 +138,7 @@ export const events = [
   },
   {
     slug: "ace-hive-site-visit",
-    type: "site-visit",
+    type: "community-client",
     platform: "onsite",
     date: "2026-01-18",
     dateLabel: "18 January 2026",
@@ -160,7 +160,7 @@ export const events = [
   },
   {
     slug: "dholera-velotech-preview",
-    type: "launch",
+    type: "construction-milestone",
     platform: "youtube",
     date: "2025-12-08",
     dateLabel: "8 December 2025",
@@ -183,7 +183,7 @@ export const events = [
   },
   {
     slug: "registry-day-success-stories",
-    type: "milestone",
+    type: "community-client",
     platform: "facebook",
     date: "2025-11-20",
     dateLabel: "20 November 2025",

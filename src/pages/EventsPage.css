@@ -263,14 +263,36 @@
   position: absolute;
   top: 0.85rem;
   left: 0.85rem;
+  max-width: calc(100% - 1.7rem);
   padding: 0.35rem 0.7rem;
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  border-radius: 100px;
+  line-height: 1.3;
+  border-radius: 8px;
   background: rgba(255, 255, 255, 0.92);
   color: var(--dark);
+}
+
+.event-card__type--sales-marketing {
+  background: rgba(248, 246, 242, 0.95);
+  color: #5c4a32;
+}
+
+.event-card__type--corporate-industry {
+  background: rgba(236, 244, 252, 0.95);
+  color: #1e3a5f;
+}
+
+.event-card__type--community-client {
+  background: rgba(241, 248, 240, 0.95);
+  color: #3d4f3a;
+}
+
+.event-card__type--construction-milestone {
+  background: rgba(255, 243, 230, 0.95);
+  color: #6b4a2e;
 }
 
 .event-card__platform {

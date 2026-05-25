@@ -439,7 +439,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="about-img">
-              <img src="/about.png" alt="About BookMyAcre" />
+              <img src="/img/projects/serve.webp" alt="About BookMyAcre" />
             </div>
           </div>
         </div>

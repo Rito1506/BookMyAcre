@@ -13,11 +13,7 @@ import "./EventsPage.css";
 
 const FILTER_OPTIONS = [
   { id: "all", label: "All" },
-  { id: "site-visit", label: "Site Visits" },
-  { id: "launch", label: "Launches" },
-  { id: "expo", label: "Expos" },
-  { id: "social", label: "Social" },
-  { id: "milestone", label: "Milestones" },
+  ...Object.entries(EVENT_TYPES).map(([id, label]) => ({ id, label })),
 ];
 
 const PLATFORM_ICONS = {
@@ -25,7 +21,7 @@ const PLATFORM_ICONS = {
   youtube: "fab fa-youtube",
   linkedin: "fab fa-linkedin-in",
   facebook: "fab fa-facebook-f",
-  onsite: "fas fa-map-marker-alt",
+  onsite: "fas fa-map-marker-alt",  
 };
 
 function shortLabel(title) {
