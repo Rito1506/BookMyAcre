@@ -1,12 +1,16 @@
 export const EVENT_TYPES = {
-  "sales-marketing": "Sales & Marketing Events",
-  "corporate-industry": "Corporate & Industry Events",
-  "community-client": "Community & Client Relations Events",
-  "construction-milestone": "Project Construction Milestones",
+  // "sales-marketing": "Sales & Marketing Events",
+  // "corporate-industry": "Corporate & Industry Events",
+  // "community-client": "Community & Client Relations Events",
+  // "construction-milestone": "Project Construction Milestones",
+
+  "investors" : "Inverstors Event",
+  "channel-partners" : "Channel Partners Event",
 };
 
 export const PLATFORM_LABELS = {
   onsite: "On-site",
+  Register: "Register Now",
   instagram: "Instagram",
   youtube: "YouTube",
   linkedin: "LinkedIn",
@@ -16,8 +20,8 @@ export const PLATFORM_LABELS = {
 export const events = [
   {
     slug: "BookMyAcre-Jammu-Event-Info",
-    type: "community-client",
-    platform: "onsite",
+    type: "channel-partners",
+    platform: "Register",
     date: "2026-05-31",
     dateLabel: "31 May 2026",
     location: "Jammu",
@@ -37,20 +41,21 @@ export const events = [
       "Explore premium investment opportunities across Noida, Greater Noida & Dholera Smart City with expert guidance, future growth insights & high appreciation projects.",
       "This event is specially designed for investors, channel partners & property buyers looking for smart real estate opportunities in India’s fastest-growing investment corridors.",
     ],
-    externalUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfGYYpi-yz_oN4o_yC00Kjv_kta3a_I1vVDidpx2RsuF96rbA/viewform",
+    externalUrl:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfGYYpi-yz_oN4o_yC00Kjv_kta3a_I1vVDidpx2RsuF96rbA/viewform",
     tags: ["bookmyacre", "jammu", "property buyers meet", "event"],
   },
   {
-    slug: "sector-150-open-plot-day",
-    type: "sales-marketing",
-    platform: "onsite",
-    date: "2026-04-22",
-    dateLabel: "22 April 2026",
-    location: "Sector 150, Noida",
-    title: "Open Plot Day — Sector 150",
+    slug: "BookMyAcre-Veda-Event-Info",
+    type: "channel-partners",
+    platform: "Register",
+    date: "--",
+    dateLabel: "upcoming",
+    location: "Tech Zone, Greater Noida",
+    title: "Channel Partner - Event At Veda",
     excerpt:
-      "Exclusive preview of new inventory with on-spot consultation and documentation support.",
-    cover: "/img/projects/8.png",
+      "Give Your Partners The Opportunity To Connect, Grow & Explore Premium Real Estate Opportunities.",
+    cover: "/img/events/event2.jpeg",
     highlight: true,
     featured: false,
     gallery: [
@@ -62,7 +67,9 @@ export const events = [
       "BookMyAcre hosted an Open Plot Day for Sector 150, one of Noida's fastest-appreciating corridors.",
       "Attendees received personalised investment briefings, connectivity maps, and end-to-end documentation guidance from our advisory team.",
     ],
-    tags: ["sector 150", "launch", "open day"],
+    externalUrl:
+      "https://docs.google.com/forms/d/e/1FAIpQLSddKidHWeEU5lohhKGNuKc16RH_VEEOLFlYSRDIzmnjylK2VA/viewform",
+    tags: ["Greater Noida", "Event", "BookMyAcre", "Real Estate"],
   },
   {
     slug: "noida-property-expo-2026",

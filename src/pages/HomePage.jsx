@@ -158,7 +158,12 @@ const testimonials = [
 const tickerItems = [
   {
     text: "New Event: Jammu Meet — Property Buyers Meet in Jammu.| Register Yourself for the Events.",
-    href: "https://docs.google.com/forms/d/e/1FAIpQLSfGYYpi-yz_oN4o_yC00Kjv_kta3a_I1vVDidpx2RsuF96rbA/viewform?pli=1",
+    href: "/events/BookMyAcre-Jammu-Event-Info",
+    external: true,
+  },
+  {
+    text: "Upcomming Event: Channel Partners — Events At Veda.| Register Yourself for the Events.",
+    href: "/events/BookMyAcre-Veda-Event-Info",
     external: true,
   },
   {
@@ -533,18 +538,26 @@ export default function HomePage() {
       </section>
 
       {/* ── Experience Banner ── */}
-      <section
-        className="experience-section"
-        style={{ backgroundImage: "url(/img/bg/text-1.jpg)" }}
-      >
-        <div className="experience-overlay" />
-        <div className="container experience-content">
-          <div className="experience-num">20</div>
-          <h4 className="experience-text">
-            <span className="text-primary">Years of successful work</span>
-            <br />
-            in the market
-          </h4>
+      <section className="experience-section">
+        <div className="experience-glow" />
+        <div className="container">
+          <div className="experience-card-glass">
+            <div className="experience-num-wrap">
+              <span className="experience-num-bg">20</span>
+              <span className="experience-num-fg">20</span>
+            </div>
+            <div className="experience-divider-line" />
+            <div className="experience-info-wrap">
+              <span className="experience-kicker">A Legacy of Trust</span>
+              <h4 className="experience-headline">
+                Years of successful work <br />
+                <span className="text-primary">in the real estate market</span>
+              </h4>
+              <p className="experience-desc">
+                Connecting families and institutions with prime, verified land investments across India’s high-growth development corridors.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

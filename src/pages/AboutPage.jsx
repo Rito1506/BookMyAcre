@@ -37,7 +37,7 @@ export default function AboutPage() {
       {/* Hero */}
       <div
         className="page-hero"
-        style={{ backgroundImage: "url(/img/bg/about.jpg)" }}
+        style={{ backgroundImage: "url(/img/bg/about.webp)" }}
       >
         <div className="container">
           <h1 className="fade-in">About Us</h1>

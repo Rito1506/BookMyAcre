@@ -5,8 +5,8 @@
   min-height: 600px;
   overflow: hidden;
   /* diagonal bottom clip for visual interest */
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+  /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%); */
 }
 
 .reveal-section {
@@ -627,65 +627,154 @@
   }
 }
 
-/* ── Experience ── */
+/* ── Experience Banner (Premium Revamp) ── */
 .experience-section {
   position: relative;
-  padding: 5rem 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+  padding: 7rem 0;
+  background: #121214;
   overflow: hidden;
-}
-
-/* duplicated, slightly blurred background layer to hide pixelation */
-.experience-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: inherit;
-  background-size: inherit;
-  background-position: inherit;
-  background-repeat: inherit;
-  filter: blur(6px) saturate(120%);
-  transform: scale(1.04);
-  z-index: 0;
-  opacity: 0.95;
-}
-
-.experience-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(18, 18, 18, 0.65);
-  z-index: 1;
-}
-
-.experience-content {
-  position: relative;
-  z-index: 2;
   display: flex;
   align-items: center;
-  gap: 3rem;
+  justify-content: center;
 }
 
-.experience-num {
+/* Luxury glowing background effect */
+.experience-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(197, 164, 126, 0.08) 0%, rgba(18, 18, 20, 0) 70%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Glassmorphic main container */
+.experience-card-glass {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(197, 164, 126, 0.15);
+  border-radius: 24px;
+  padding: 4rem 5rem;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  box-shadow: 
+    0 30px 70px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: border-color 0.5s ease, transform 0.5s ease;
+}
+
+.experience-card-glass:hover {
+  border-color: rgba(197, 164, 126, 0.35);
+  transform: translateY(-4px);
+}
+
+/* Giant Number Styling */
+.experience-num-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.experience-num-bg {
+  position: absolute;
   font-family: var(--font-heading);
-  font-size: clamp(5rem, 14vw, 10rem);
+  font-size: clamp(6rem, 12vw, 9rem);
   font-weight: 700;
-  color: var(--primary);
-  line-height: 1;
-  opacity: 0.9;
-  letter-spacing: -0.02em;
+  color: rgba(197, 164, 126, 0.03);
+  user-select: none;
+  transform: scale(1.15);
 }
 
-.experience-text {
+.experience-num-fg {
+  font-family: var(--font-heading);
+  font-size: clamp(5.5rem, 10vw, 8rem);
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff 30%, var(--primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+/* Elegant divider line */
+.experience-divider-line {
+  width: 1px;
+  height: 120px;
+  background: linear-gradient(to bottom, rgba(197, 164, 126, 0) 0%, rgba(197, 164, 126, 0.4) 50%, rgba(197, 164, 126, 0) 100%);
+  flex-shrink: 0;
+}
+
+/* Copywriting & Details */
+.experience-info-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.experience-kicker {
   font-family: var(--font-body);
-  font-size: 1.15rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--primary);
+  opacity: 0.9;
+}
+
+.experience-headline {
+  font-family: var(--font-body);
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.85);
-  letter-spacing: 0.05em;
+  color: #ffffff;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
   text-transform: none;
-  line-height: 1.6;
+}
+
+.experience-headline .text-primary {
+  font-weight: 600;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--primary-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.experience-desc {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: #a0a0a8;
+  line-height: 1.7;
+  max-width: 480px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .experience-card-glass {
+    flex-direction: column;
+    padding: 3rem;
+    gap: 2rem;
+    text-align: center;
+  }
+  .experience-divider-line {
+    width: 80px;
+    height: 1px;
+    background: linear-gradient(to right, rgba(197, 164, 126, 0) 0%, rgba(197, 164, 126, 0.4) 50%, rgba(197, 164, 126, 0) 100%);
+  }
+  .experience-info-wrap {
+    align-items: center;
+  }
+  .experience-desc {
+    text-align: center;
+  }
 }
 
 /* ── Achievements ── */
@@ -931,7 +1020,24 @@
     padding: 0 1.25rem;
     height: 36px;
   }
+  .hero__badge {
+    display: none;
+  }
+  .hero__controls{
+    bottom: 4.5rem;
+    right: 1rem;
+  }
+  .hero__progress-line{
+    width: 100px;
+  }
+  .hero__content{
+    padding-bottom: 6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
+
+
 
 @media (max-width: 480px) {
   .hero__ticker-badge {
@@ -941,5 +1047,14 @@
   .hero__ticker-item {
     padding: 0 1rem;
     font-size: 0.65rem;
+  }
+  .hero__controls{
+    display: none;
+  }
+  .hero__dot{
+    bottom: 1.25rem;
+  }
+  .hero__subtitle{
+    font-size: 0.88rem;
   }
 }

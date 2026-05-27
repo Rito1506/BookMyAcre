@@ -7,7 +7,7 @@ export default function BlogPage() {
     <div className="inner-page">
       <div
         className="page-hero"
-        style={{ backgroundImage: "url(/img/bg/blog.jpg)" }}
+        style={{ backgroundImage: "url(/img/bg/blog.webp)" }}
       >
         <div className="container">
           <h1 className="fade-in">Blog</h1>

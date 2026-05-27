@@ -7,7 +7,7 @@ export default function ContactPage() {
       <div
         className="page-hero"
         style={{
-          backgroundImage: "url(/img/bg/contacts.png)",
+          backgroundImage: "url(/img/bg/contacts.webp)",
           backgroundPosition: "top",
           backgroundRepeat: "no-repeat",
           width: "100%",

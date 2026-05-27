@@ -74,7 +74,7 @@ export default function ProjectsPage() {
 
   return (
     <div className="inner-page">
-      <div className="page-hero" style={{ backgroundImage: 'url(/img/bg/projects.jpg)' }}>
+      <div className="page-hero" style={{ backgroundImage: 'url(/img/bg/projects.webp)' }}>
         <div className="container">
           <h1 className="fade-in">Projects</h1>
         </div>
