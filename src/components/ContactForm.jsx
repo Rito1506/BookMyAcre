@@ -5,6 +5,7 @@ import "./ContactForm.css";
 const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY || "";
 const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
+console.log("WEB3FORMS_KEY:", import.meta.env.VITE_WEB3FORMS_KEY);
 const validateForm = (form) => {
   const errors = {};
 
