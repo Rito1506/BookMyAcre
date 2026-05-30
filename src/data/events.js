@@ -4,8 +4,8 @@ export const EVENT_TYPES = {
   // "community-client": "Community & Client Relations Events",
   // "construction-milestone": "Project Construction Milestones",
 
-  "investors" : "Inverstors Event",
-  "channel-partners" : "Channel Partners Event",
+  "investors": "Inverstors Event",
+  "channel-partners": "Channel Partners Event",
 };
 
 export const PLATFORM_LABELS = {
@@ -42,7 +42,7 @@ export const events = [
       "This event is specially designed for investors, channel partners & property buyers looking for smart real estate opportunities in India’s fastest-growing investment corridors.",
     ],
     externalUrl:
-      "https://docs.google.com/forms/d/e/1FAIpQLSfGYYpi-yz_oN4o_yC00Kjv_kta3a_I1vVDidpx2RsuF96rbA/viewform",
+      "/gwen.html",
     tags: ["bookmyacre", "jammu", "property buyers meet", "event"],
   },
   {

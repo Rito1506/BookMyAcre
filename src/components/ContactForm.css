@@ -9,6 +9,7 @@
   flex-direction: column;
   gap: 1rem;
 }
+
 .contact-form__col--full {
   grid-column: 1 / -1;
 }
@@ -85,6 +86,7 @@
   .contact-form__grid {
     grid-template-columns: 1fr;
   }
+
   .contact-form__submit {
     text-align: left;
   }

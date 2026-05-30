@@ -1,0 +1,1685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyAcre – Jammu Property Buyer Meet 2026 | Premium Real Estate Access</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.0/300.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.0/400.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.0/500.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.0/600.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.0/700.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.0/800.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.0/900.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/playfair-display@5.0.0/400.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/playfair-display@5.0.0/700.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --navy: #0a1628;
+            --navy-light: #132040;
+            --navy-mid: #1a2d55;
+            --gold: #d4a843;
+            --gold-light: #e8c96a;
+            --gold-dark: #b8922f;
+            --white: #ffffff;
+            --cream: #f5f0e8;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--navy);
+            color: var(--white);
+            overflow-x: hidden;
+        }
+        .font-display { font-family: 'Playfair Display', serif; }
+        
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--navy); }
+        ::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 3px; }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-60px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(60px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @keyframes shimmer {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes countDown {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        @keyframes borderGlow {
+            0%, 100% { box-shadow: 0 0 15px rgba(212, 168, 67, 0.3); }
+            50% { box-shadow: 0 0 30px rgba(212, 168, 67, 0.6); }
+        }
+        @keyframes ripple {
+            0% { transform: scale(0.8); opacity: 1; }
+            100% { transform: scale(2.4); opacity: 0; }
+        }
+        @keyframes spinSlow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Gold gradient text */
+        .gold-text {
+            background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dark));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Gold button */
+        .btn-gold {
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            color: var(--navy);
+            font-weight: 700;
+            padding: 16px 40px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px rgba(212, 168, 67, 0.4);
+        }
+        .btn-gold::after {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+        .btn-gold:hover::after { left: 100%; }
+
+        /* Outline button */
+        .btn-outline {
+            background: transparent;
+            color: var(--gold);
+            font-weight: 600;
+            padding: 14px 36px;
+            border: 2px solid var(--gold);
+            border-radius: 4px;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        .btn-outline:hover {
+            background: var(--gold);
+            color: var(--navy);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px rgba(212, 168, 67, 0.3);
+        }
+
+        /* WhatsApp button */
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+            font-weight: 700;
+            padding: 14px 36px;
+            border: none;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .btn-whatsapp:hover {
+            background: #20bd5a;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px rgba(37, 211, 102, 0.3);
+        }
+
+        /* Glass card */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(212, 168, 67, 0.15);
+            border-radius: 12px;
+            transition: all 0.4s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(212, 168, 67, 0.4);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Gold divider */
+        .gold-divider {
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            margin: 0 auto;
+        }
+
+        /* Hero overlay */
+        .hero-overlay {
+            background: linear-gradient(180deg, 
+                rgba(10, 22, 40, 0.4) 0%, 
+                rgba(10, 22, 40, 0.7) 50%, 
+                rgba(10, 22, 40, 0.95) 100%);
+        }
+
+        /* Section gradient */
+        .section-gradient {
+            background: linear-gradient(180deg, var(--navy) 0%, var(--navy-light) 50%, var(--navy) 100%);
+        }
+
+        /* Countdown timer */
+        .countdown-box {
+            background: rgba(212, 168, 67, 0.08);
+            border: 1px solid rgba(212, 168, 67, 0.25);
+            border-radius: 8px;
+            padding: 12px 16px;
+            min-width: 70px;
+            text-align: center;
+        }
+
+        /* Form input */
+        .form-input {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(212, 168, 67, 0.2);
+            border-radius: 6px;
+            padding: 14px 18px;
+            color: var(--white);
+            font-size: 1rem;
+            width: 100%;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 20px rgba(212, 168, 67, 0.15);
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .form-input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Select styling */
+        .form-select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23d4a843' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+        }
+
+        /* Sticky WhatsApp */
+        .sticky-whatsapp {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 100;
+            animation: pulse 2s infinite;
+        }
+
+        /* Popup overlay */
+        .popup-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease;
+        }
+        .popup-card {
+            background: linear-gradient(145deg, var(--navy-light), var(--navy));
+            border: 1px solid rgba(212, 168, 67, 0.3);
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 480px;
+            width: 90%;
+            animation: fadeInUp 0.4s ease;
+            position: relative;
+        }
+
+        /* Location card */
+        .location-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            transition: all 0.4s ease;
+        }
+        .location-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 40%, rgba(10, 22, 40, 0.95) 100%);
+            z-index: 1;
+        }
+        .location-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Benefit card */
+        .benefit-card {
+            position: relative;
+            overflow: hidden;
+        }
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 4px; height: 100%;
+            background: linear-gradient(180deg, var(--gold), var(--gold-dark));
+        }
+
+        /* Step indicator */
+        .step-indicator {
+            width: 10px; height: 10px;
+            border-radius: 50%;
+            background: rgba(212, 168, 67, 0.2);
+            transition: all 0.3s ease;
+        }
+        .step-indicator.active {
+            background: var(--gold);
+            box-shadow: 0 0 10px rgba(212, 168, 67, 0.5);
+        }
+        .step-indicator.completed {
+            background: var(--gold);
+        }
+
+        /* Mobile optimizations */
+        @media (max-width: 768px) {
+            .btn-gold { padding: 14px 28px; font-size: 0.9rem; }
+            .btn-outline { padding: 12px 28px; font-size: 0.85rem; }
+            .countdown-box { min-width: 55px; padding: 8px 10px; }
+            .popup-card { padding: 28px 24px; }
+        }
+
+        /* Smooth scroll */
+        html { scroll-behavior: smooth; }
+
+        /* Particle canvas */
+        #particles-canvas {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Gold shimmer line */
+        .shimmer-line {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            background-size: 200% 100%;
+            animation: shimmer 3s linear infinite;
+        }
+
+        /* Trust badge */
+        .trust-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 0.5px;
+        }
+
+        /* Section label */
+        .section-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+
+        /* Image fallback */
+        .img-fallback {
+            background: linear-gradient(135deg, var(--navy-light), var(--navy-mid));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Floating label animation */
+        .float-label {
+            position: relative;
+        }
+        .float-label input:focus + label,
+        .float-label input:not(:placeholder-shown) + label {
+            transform: translateY(-24px) scale(0.85);
+            color: var(--gold);
+        }
+        .float-label label {
+            position: absolute;
+            left: 18px;
+            top: 14px;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            pointer-events: none;
+        }
+
+        /* Success animation */
+        .success-check {
+            width: 80px; height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            animation: float 2s ease infinite;
+        }
+
+        /* Navigation */
+        .nav-link {
+            color: rgba(255, 255, 255, 0.7);
+            transition: color 0.3s ease;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        .nav-link:hover { color: var(--gold); }
+
+        /* Scroll indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: float 2s ease infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Particles Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar" style="position:fixed;top:0;left:0;right:0;z-index:50;padding:16px 0;transition:all 0.4s ease;">
+        <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div style="width:36px;height:36px;">
+                    <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 2L32 10V26L18 34L4 26V10L18 2Z" stroke="#d4a843" stroke-width="1.5" fill="none"/>
+                        <path d="M18 8L26 13V23L18 28L10 23V13L18 8Z" stroke="#d4a843" stroke-width="1" fill="none" opacity="0.6"/>
+                        <path d="M18 14L22 17V21L18 24L14 21V17L18 14Z" fill="#d4a843" opacity="0.4"/>
+                    </svg>
+                </div>
+                <span class="font-display text-white text-lg font-bold tracking-wide">BookMyAcre</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#why-attend" class="nav-link">Why Attend</a>
+                <a href="#locations" class="nav-link">Locations</a>
+                <a href="#benefits" class="nav-link">Benefits</a>
+                <a href="#register" class="btn-gold" style="padding:10px 24px;font-size:0.8rem;">Reserve Access</a>
+            </div>
+            <button onclick="openModal()" class="md:hidden text-gold" style="color:var(--gold);">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" style="display:none;position:fixed;inset:0;background:rgba(10,22,40,0.98);z-index:60;padding:80px 30px 30px;">
+        <button onclick="closeMobileMenu()" style="position:absolute;top:20px;right:20px;color:var(--gold);background:none;border:none;cursor:pointer;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+        <div class="flex flex-col gap-6 items-center">
+            <a href="#why-attend" onclick="closeMobileMenu()" class="nav-link text-lg">Why Attend</a>
+            <a href="#locations" onclick="closeMobileMenu()" class="nav-link text-lg">Locations</a>
+            <a href="#benefits" onclick="closeMobileMenu()" class="nav-link text-lg">Benefits</a>
+            <a href="#register" onclick="closeMobileMenu()" class="btn-gold">Reserve Access</a>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="hero" style="position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;">
+        <!-- Background Image -->
+        <div style="position:absolute;inset:0;z-index:0;">
+            <img src="https://image.qwenlm.ai/public_source/8424d21f-a0f2-46d1-baba-42d9fee7e629/151bb8940-b93d-4fd4-885f-5fd2ea366217.png" 
+                 alt="Premium Real Estate Investment" 
+                 style="width:100%;height:100%;object-fit:cover;"
+                 onerror="this.style.display='none'">
+            <div class="hero-overlay" style="position:absolute;inset:0;z-index:1;"></div>
+        </div>
+
+        <div class="relative z-10 w-full max-w-6xl mx-auto px-4 py-20 md:py-0" style="padding-top:100px;">
+            <div class="text-center max-w-4xl mx-auto">
+                <!-- Event Tag -->
+                <div class="inline-flex items-center gap-2 mb-6 animate-on-scroll" style="animation-delay:0.2s;">
+                    <span style="display:inline-block;width:8px;height:8px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite;"></span>
+                    <span style="font-size:0.8rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold);">Exclusive Investor Event</span>
+                    <span style="display:inline-block;width:8px;height:8px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite;"></span>
+                </div>
+
+                <!-- Main Headline -->
+                <h1 class="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-on-scroll" style="animation-delay:0.4s;">
+                    Explore India's Future<br>
+                    <span class="gold-text">Investment Corridors</span> —<br>
+                    All In One Place.
+                </h1>
+
+                <!-- Subheadline -->
+                <p class="text-base sm:text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-8 leading-relaxed animate-on-scroll" style="animation-delay:0.6s;">
+                    Meet dedicated property consultants, explore premium projects across Noida, Greater Noida & Dholera, unlock event-only offers & connect with a growing investor community.
+                </p>
+
+                <!-- Event Details -->
+                <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mb-8 animate-on-scroll" style="animation-delay:0.8s;">
+                    <div class="flex items-center gap-2 text-white/80">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span style="font-size:0.9rem;font-weight:500;">Zone By The Park, Jammu</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-white/80">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        <span style="font-size:0.9rem;font-weight:500;">31st May 2026</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-white/80">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span style="font-size:0.9rem;font-weight:500;">11 AM – 7 PM</span>
+                    </div>
+                </div>
+
+                <!-- Countdown Timer -->
+                <div class="flex items-center justify-center gap-3 sm:gap-4 mb-10 animate-on-scroll" style="animation-delay:1s;">
+                    <div style="text-align:center;">
+                        <div class="countdown-box">
+                            <div id="countdown-days" style="font-size:1.8rem;font-weight:800;color:var(--gold);font-variant-numeric:tabular-nums;">--</div>
+                        </div>
+                        <span style="font-size:0.65rem;color:rgba(255,255,255,0.5);letter-spacing:1px;margin-top:4px;display:block;">DAYS</span>
+                    </div>
+                    <span style="font-size:1.5rem;color:var(--gold);font-weight:300;">:</span>
+                    <div style="text-align:center;">
+                        <div class="countdown-box">
+                            <div id="countdown-hours" style="font-size:1.8rem;font-weight:800;color:var(--gold);font-variant-numeric:tabular-nums;">--</div>
+                        </div>
+                        <span style="font-size:0.65rem;color:rgba(255,255,255,0.5);letter-spacing:1px;margin-top:4px;display:block;">HRS</span>
+                    </div>
+                    <span style="font-size:1.5rem;color:var(--gold);font-weight:300;">:</span>
+                    <div style="text-align:center;">
+                        <div class="countdown-box">
+                            <div id="countdown-minutes" style="font-size:1.8rem;font-weight:800;color:var(--gold);font-variant-numeric:tabular-nums;">--</div>
+                        </div>
+                        <span style="font-size:0.65rem;color:rgba(255,255,255,0.5);letter-spacing:1px;margin-top:4px;display:block;">MIN</span>
+                    </div>
+                    <span style="font-size:1.5rem;color:var(--gold);font-weight:300;">:</span>
+                    <div style="text-align:center;">
+                        <div class="countdown-box">
+                            <div id="countdown-seconds" style="font-size:1.8rem;font-weight:800;color:var(--gold);font-variant-numeric:tabular-nums;">--</div>
+                        </div>
+                        <span style="font-size:0.65rem;color:rgba(255,255,255,0.5);letter-spacing:1px;margin-top:4px;display:block;">SEC</span>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 animate-on-scroll" style="animation-delay:1.2s;">
+                    <a href="#register" class="btn-gold w-full sm:w-auto" style="padding:18px 48px;font-size:1.05rem;">
+                        ✅ Reserve My Access
+                    </a>
+                    <a href="https://wa.me/918796951483?text=Hi%2C%20I%20need%20quick%20details%20about%20the%20Jammu%20Property%20Meet%202026.%20Please%20share%20event%20information%20and%20project%20details." 
+                       target="_blank" 
+                       class="btn-whatsapp w-full sm:w-auto">
+                        💬 Chat On WhatsApp
+                    </a>
+                </div>
+
+                <!-- Trust Line -->
+                <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-white/50 text-sm animate-on-scroll" style="animation-delay:1.4s;">
+                    <span class="flex items-center gap-1.5">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        Limited registrations
+                    </span>
+                    <span class="flex items-center gap-1.5">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                        Investor networking
+                    </span>
+                    <span class="flex items-center gap-1.5">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        Expert consultation
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" opacity="0.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+    </section>
+
+    <!-- WHY ATTEND SECTION -->
+    <section id="why-attend" class="section-gradient py-16 sm:py-20 md:py-24 relative">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12 sm:mb-16">
+                <p class="section-label animate-on-scroll">Why Attend</p>
+                <h2 class="font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-4 animate-on-scroll">
+                    A Premium Real Estate Access<br><span class="gold-text">Experience For Serious Investors</span>
+                </h2>
+                <div class="gold-divider my-4"></div>
+                <p class="text-white/60 max-w-xl mx-auto animate-on-scroll">Not an exhibition. Not a crowded mela. A curated investment experience.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="glass-card p-6 sm:p-8 animate-on-scroll">
+                    <div style="width:48px;height:48px;background:rgba(212,168,67,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                    </div>
+                    <h3 class="font-display text-lg font-bold mb-3">Curated Opportunities</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Hand-picked investment projects with high growth potential across India's fastest-developing corridors.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card p-6 sm:p-8 animate-on-scroll">
+                    <div style="width:48px;height:48px;background:rgba(212,168,67,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                    </div>
+                    <h3 class="font-display text-lg font-bold mb-3">Direct Consultation</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">One-on-one sessions with dedicated property consultants who understand your investment goals.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card p-6 sm:p-8 animate-on-scroll">
+                    <div style="width:48px;height:48px;background:rgba(212,168,67,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <h3 class="font-display text-lg font-bold mb-3">Premium Networking</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Connect with serious investors and channel partners in an exclusive, invitation-only environment.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="glass-card p-6 sm:p-8 animate-on-scroll">
+                    <div style="width:48px;height:48px;background:rgba(212,168,67,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3 class="font-display text-lg font-bold mb-3">Exclusive Access</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Early access to premium projects and investment opportunities before they go public.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="glass-card p-6 sm:p-8 animate-on-scroll">
+                    <div style="width:48px;height:48px;background:rgba(212,168,67,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    </div>
+                    <h3 class="font-display text-lg font-bold mb-3">Expert Guidance</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Understand growth potential, appreciation opportunities, and future infrastructure plans.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="glass-card p-6 sm:p-8 animate-on-scroll">
+                    <div style="width:48px;height:48px;background:rgba(212,168,67,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                    </div>
+                    <h3 class="font-display text-lg font-bold mb-3">Event-Only Offers</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Unlock exclusive discounts and benefits available only to registered attendees.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JAMMU VIBES SECTION -->
+    <section class="py-16 sm:py-20 relative overflow-hidden">
+        <div style="position:absolute;inset:0;">
+            <img src="https://image.qwenlm.ai/public_source/8424d21f-a0f2-46d1-baba-42d9fee7e629/12684ec1a-d81d-48bf-98d6-06ebba4872d1.png" 
+                 alt="Jammu Kashmir" 
+                 style="width:100%;height:100%;object-fit:cover;opacity:0.15;"
+                 onerror="this.style.display='none'">
+            <div style="position:absolute;inset:0;background:linear-gradient(180deg, var(--navy) 0%, rgba(10,22,40,0.8) 50%, var(--navy) 100%);"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+            <div class="animate-on-scroll">
+                <p class="section-label">From Jammu to Your Investment Future</p>
+                <h2 class="font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
+                    Bridging <span class="gold-text">Jammu's Heritage</span> with<br>
+                    India's Investment Future
+                </h2>
+                <p class="text-white/60 max-w-2xl mx-auto leading-relaxed mb-8">
+                    From the majestic valleys of Jammu to the smart cities of tomorrow — this event brings India's most promising real estate opportunities right to your doorstep. Experience the perfect blend of regional trust and national opportunity.
+                </p>
+                <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
+                    <div class="text-center">
+                        <div class="font-display text-3xl sm:text-4xl font-bold gold-text">3</div>
+                        <div class="text-white/50 text-sm mt-1">Premium Locations</div>
+                    </div>
+                    <div class="w-px h-12 bg-white/10"></div>
+                    <div class="text-center">
+                        <div class="font-display text-3xl sm:text-4xl font-bold gold-text">50+</div>
+                        <div class="text-white/50 text-sm mt-1">Projects Available</div>
+                    </div>
+                    <div class="w-px h-12 bg-white/10"></div>
+                    <div class="text-center">
+                        <div class="font-display text-3xl sm:text-4xl font-bold gold-text">100+</div>
+                        <div class="text-white/50 text-sm mt-1">Expected Attendees</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED LOCATIONS SECTION -->
+    <section id="locations" class="py-16 sm:py-20 md:py-24 section-gradient">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12 sm:mb-16">
+                <p class="section-label animate-on-scroll">Featured Locations</p>
+                <h2 class="font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-4 animate-on-scroll">
+                    Explore <span class="gold-text">India's Growth Corridors</span>
+                </h2>
+                <div class="gold-divider my-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                <!-- NOIDA -->
+                <div class="location-card animate-on-scroll" style="height:320px;">
+                    <img src="https://image.qwenlm.ai/public_source/8424d21f-a0f2-46d1-baba-42d9fee7e629/1d9b36caa-3d56-4cbb-908d-b6d9847cac55.png" 
+                         alt="Noida" 
+                         style="width:100%;height:100%;object-fit:cover;"
+                         onerror="this.parentElement.style.background='linear-gradient(135deg, var(--navy-light), var(--navy-mid))'">
+                    <div style="position:absolute;inset:0;z-index:2;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;">
+                        <span style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">Featured Location</span>
+                        <h3 class="font-display text-2xl font-bold mb-2">NOIDA</h3>
+                        <p class="text-white/70 text-sm mb-3">Future-ready infrastructure with world-class connectivity and rapid urban development.</p>
+                        <div class="flex items-center gap-2">
+                            <span style="width:6px;height:6px;background:var(--gold);border-radius:50%;"></span>
+                            <span style="font-size:0.75rem;color:var(--gold);font-weight:600;">High Growth Potential</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GREATER NOIDA -->
+                <div class="location-card animate-on-scroll" style="height:320px;">
+                    <img src="https://image.qwenlm.ai/public_source/8424d21f-a0f2-46d1-baba-42d9fee7e629/1aae513ca-c0e1-4c98-b932-a09f642fd243.png" 
+                         alt="Greater Noida" 
+                         style="width:100%;height:100%;object-fit:cover;"
+                         onerror="this.parentElement.style.background='linear-gradient(135deg, var(--navy-light), var(--navy-mid))'">
+                    <div style="position:absolute;inset:0;z-index:2;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;">
+                        <span style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">Featured Location</span>
+                        <h3 class="font-display text-2xl font-bold mb-2">GREATER NOIDA</h3>
+                        <p class="text-white/70 text-sm mb-3">High appreciation corridor with upcoming metro expansion and industrial hubs.</p>
+                        <div class="flex items-center gap-2">
+                            <span style="width:6px;height:6px;background:var(--gold);border-radius:50%;"></span>
+                            <span style="font-size:0.75rem;color:var(--gold);font-weight:600;">Premium Appreciation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DHOLERA -->
+                <div class="location-card animate-on-scroll" style="height:320px;">
+                    <img src="https://image.qwenlm.ai/public_source/8424d21f-a0f2-46d1-baba-42d9fee7e629/12657d4a7-ccf3-4f4f-a17c-e8a714de9872.png" 
+                         alt="Dholera" 
+                         style="width:100%;height:100%;object-fit:cover;"
+                         onerror="this.parentElement.style.background='linear-gradient(135deg, var(--navy-light), var(--navy-mid))'">
+                    <div style="position:absolute;inset:0;z-index:2;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;">
+                        <span style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">Featured Location</span>
+                        <h3 class="font-display text-2xl font-bold mb-2">DHOLERA</h3>
+                        <p class="text-white/70 text-sm mb-3">India's first Greenfield Smart City — Velotech City investment opportunity.</p>
+                        <div class="flex items-center gap-2">
+                            <span style="width:6px;height:6px;background:var(--gold);border-radius:50%;"></span>
+                            <span style="font-size:0.75rem;color:var(--gold);font-weight:600;">Smart City Investment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INVESTOR COMMUNITY SECTION -->
+    <section class="py-16 sm:py-20 relative overflow-hidden">
+        <div style="position:absolute;inset:0;background:linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);"></div>
+        <div class="relative z-10 max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-on-scroll">
+                    <p class="section-label">Investor Community</p>
+                    <h2 class="font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
+                        Join A Growing<br><span class="gold-text">Investor Community</span>
+                    </h2>
+                    <p class="text-white/60 mb-8 leading-relaxed">This event is designed for people looking to build lasting wealth through smart real estate investments.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div style="width:24px;height:24px;background:rgba(212,168,67,0.15);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <span class="text-white/80 text-sm">Build long-term wealth through strategic investments</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div style="width:24px;height:24px;background:rgba(212,168,67,0.15);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <span class="text-white/80 text-sm">Explore future-ready investment zones</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div style="width:24px;height:24px;background:rgba(212,168,67,0.15);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <span class="text-white/80 text-sm">Network with serious, like-minded investors</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div style="width:24px;height:24px;background:rgba(212,168,67,0.15);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <span class="text-white/80 text-sm">Connect with dedicated property consultants</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div style="width:24px;height:24px;background:rgba(212,168,67,0.15);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <span class="text-white/80 text-sm">Access premium opportunities early</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-on-scroll">
+                    <div style="position:relative;border-radius:16px;overflow:hidden;">
+                        <img src="https://image.qwenlm.ai/public_source/8424d21f-a0f2-46d1-baba-42d9fee7e629/1c5211fdd-c9c5-49c8-aa91-5a41de14ee46.png" 
+                             alt="Investor Community" 
+                             style="width:100%;border-radius:16px;"
+                             onerror="this.parentElement.style.background='linear-gradient(135deg, var(--navy-light), var(--navy-mid))';this.parentElement.style.minHeight='400px'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONSULTANT SECTION -->
+    <section class="py-16 sm:py-20 section-gradient">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <p class="section-label animate-on-scroll">Expert Guidance</p>
+                <h2 class="font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-4 animate-on-scroll">
+                    Dedicated Consultants For Every<br><span class="gold-text">Investment Destination</span>
+                </h2>
+                <div class="gold-divider my-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="animate-on-scroll">
+                    <div style="border-radius:16px;overflow:hidden;">
+                        <img src="https://image.qwenlm.ai/public_source/8424d21f-a0f2-46d1-baba-42d9fee7e629/111bee095-04c0-4aa2-a537-99de8021f2db.png" 
+                             alt="Property Consultant" 
+                             style="width:100%;border-radius:16px;"
+                             onerror="this.parentElement.style.background='linear-gradient(135deg, var(--navy-light), var(--navy-mid))';this.parentElement.style.minHeight='400px'">
+                    </div>
+                </div>
+                <div class="animate-on-scroll">
+                    <div class="space-y-6">
+                        <div class="glass-card p-6">
+                            <div class="flex items-center gap-3 mb-3">
+                                <div style="width:40px;height:40px;background:rgba(212,168,67,0.15);border-radius:10px;display:flex;align-items:center;justify-content:center;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <h3 class="font-bold text-lg">Get Direct Guidance For</h3>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span style="background:rgba(212,168,67,0.1);border:1px solid rgba(212,168,67,0.2);border-radius:20px;padding:6px 16px;font-size:0.8rem;color:var(--gold);">Noida</span>
+                                <span style="background:rgba(212,168,67,0.1);border:1px solid rgba(212,168,67,0.2);border-radius:20px;padding:6px 16px;font-size:0.8rem;color:var(--gold);">Greater Noida</span>
+                                <span style="background:rgba(212,168,67,0.1);border:1px solid rgba(212,168,67,0.2);border-radius:20px;padding:6px 16px;font-size:0.8rem;color:var(--gold);">Dholera</span>
+                                <span style="background:rgba(212,168,67,0.1);border:1px solid rgba(212,168,67,0.2);border-radius:20px;padding:6px 16px;font-size:0.8rem;color:var(--gold);">Velotech City</span>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-6">
+                            <div class="flex items-center gap-3 mb-3">
+                                <div style="width:40px;height:40px;background:rgba(212,168,67,0.15);border-radius:10px;display:flex;align-items:center;justify-content:center;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                                </div>
+                                <h3 class="font-bold text-lg">Our Experts Will Help You Understand</h3>
+                            </div>
+                            <div class="grid grid-cols-2 gap-3 mt-3">
+                                <div class="flex items-center gap-2">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <span class="text-white/70 text-sm">Growth potential</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <span class="text-white/70 text-sm">Appreciation</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <span class="text-white/70 text-sm">Infrastructure</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <span class="text-white/70 text-sm">Investment fit</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXCLUSIVE BENEFITS SECTION -->
+    <section id="benefits" class="py-16 sm:py-20 md:py-24 relative">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg, var(--navy) 0%, var(--navy-light) 50%, var(--navy) 100%);"></div>
+        <div class="relative z-10 max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12 sm:mb-16">
+                <p class="section-label animate-on-scroll">Exclusive Benefits</p>
+                <h2 class="font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-4 animate-on-scroll">
+                    Exclusive Event Benefits<br><span class="gold-text">Await You</span>
+                </h2>
+                <div class="gold-divider my-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                <!-- Buyers -->
+                <div class="glass-card overflow-hidden animate-on-scroll">
+                    <div style="height:200px;overflow:hidden;position:relative;">
+                        <img src="https://image.qwenlm.ai/public_source/8424d21f-a0f2-46d1-baba-42d9fee7e629/12e4d9fd1-46dd-42f8-a42b-192aa79188b4.png" 
+                             alt="Exclusive Benefits" 
+                             style="width:100%;height:100%;object-fit:cover;"
+                             onerror="this.parentElement.style.background='linear-gradient(135deg, var(--navy-mid), var(--navy-light))'">
+                        <div style="position:absolute;inset:0;background:linear-gradient(180deg, transparent 50%, rgba(10,22,40,0.9) 100%);"></div>
+                    </div>
+                    <div class="p-6 sm:p-8">
+                        <span style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);">For Property Buyers</span>
+                        <h3 class="font-display text-xl font-bold mt-2 mb-4">Shopping Vouchers</h3>
+                        <div class="font-display text-3xl font-bold gold-text mb-3">₹50,000*</div>
+                        <p class="text-white/50 text-sm">Up to ₹50,000 Shopping Vouchers on spot booking</p>
+                    </div>
+                </div>
+
+                <!-- Referral -->
+                <div class="glass-card overflow-hidden animate-on-scroll">
+                    <div style="height:200px;overflow:hidden;position:relative;">
+                        <img src="https://image.qwenlm.ai/public_source/8424d21f-a0f2-46d1-baba-42d9fee7e629/19b49ea6e-6486-4ad5-8ee9-22f0e237ecd3.png" 
+                             alt="Referral Benefits" 
+                             style="width:100%;height:100%;object-fit:cover;"
+                             onerror="this.parentElement.style.background='linear-gradient(135deg, var(--navy-mid), var(--navy-light))'">
+                        <div style="position:absolute;inset:0;background:linear-gradient(180deg, transparent 50%, rgba(10,22,40,0.9) 100%);"></div>
+                    </div>
+                    <div class="p-6 sm:p-8">
+                        <span style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);">For Referral Closing</span>
+                        <h3 class="font-display text-xl font-bold mt-2 mb-4">Exclusive Discount</h3>
+                        <div class="font-display text-3xl font-bold gold-text mb-3">1,00,000*</div>
+                        <p class="text-white/50 text-sm">Up to ₹1,00,000 exclusive discount on referral client closing</p>
+                    </div>
+                </div>
+
+                <!-- Channel Partners -->
+                <div class="glass-card overflow-hidden animate-on-scroll">
+                    <div style="height:200px;overflow:hidden;position:relative;">
+                        <img src="https://image.qwenlm.ai/public_source/8424d21f-a0f2-46d1-baba-42d9fee7e629/18b585811-9397-9c0b-8b91-9849d339d480.png" 
+                             alt="Channel Partners" 
+                             style="width:100%;height:100%;object-fit:cover;"
+                             onerror="this.parentElement.style.background='linear-gradient(135deg, var(--navy-mid), var(--navy-light))'">
+                        <div style="position:absolute;inset:0;background:linear-gradient(180deg, transparent 50%, rgba(10,22,40,0.9) 100%);"></div>
+                    </div>
+                    <div class="p-6 sm:p-8">
+                        <span style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);">For Channel Partners</span>
+                        <h3 class="font-display text-xl font-bold mt-2 mb-4">Brokerage Opportunities</h3>
+                        <div class="font-display text-2xl font-bold gold-text mb-3">Attractive %</div>
+                        <p class="text-white/50 text-sm">Attractive brokerage + direct access to growth projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY BOOKMYACRE SECTION -->
+    <section class="py-16 sm:py-20 section-gradient">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-on-scroll">
+                    <p class="section-label">Why BookMyAcre</p>
+                    <h2 class="font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
+                        Trusted by <span class="gold-text">Investors</span><br>Across India
+                    </h2>
+                    <p class="text-white/60 mb-8 leading-relaxed">We don't just sell properties — we build relationships and guide you towards wealth creation.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div style="width:44px;height:44px;background:rgba(212,168,67,0.1);border:1px solid rgba(212,168,67,0.2);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Trusted Guidance</h4>
+                                <p class="text-white/50 text-sm">Transparent advice with your investment goals at the center.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div style="width:44px;height:44px;background:rgba(212,168,67,0.1);border:1px solid rgba(212,168,67,0.2);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Transparent Documentation</h4>
+                                <p class="text-white/50 text-sm">Clear, honest paperwork — no hidden surprises.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div style="width:44px;height:44px;background:rgba(212,168,67,0.1);border:1px solid rgba(212,168,67,0.2);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Future-Focused Projects</h4>
+                                <p class="text-white/50 text-sm">Investments aligned with India's infrastructure growth.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div style="width:44px;height:44px;background:rgba(212,168,67,0.1);border:1px solid rgba(212,168,67,0.2);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Relationship-Driven</h4>
+                                <p class="text-white/50 text-sm">Long-term partnerships, not one-time transactions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-on-scroll">
+                    <div style="position:relative;border-radius:16px;overflow:hidden;">
+                        <img src="https://image.qwenlm.ai/public_source/8424d21f-a0f2-46d1-baba-42d9fee7e629/1f2481309-0313-4dce-8577-1ccd17a5ae44.png" 
+                             alt="Property Consultation" 
+                             style="width:100%;border-radius:16px;"
+                             onerror="this.parentElement.style.background='linear-gradient(135deg, var(--navy-light), var(--navy-mid))';this.parentElement.style.minHeight='500px'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOSPITALITY SECTION -->
+    <section class="py-16 sm:py-20 relative overflow-hidden">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg, var(--navy) 0%, var(--navy-light) 100%);"></div>
+        <div class="relative z-10 max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <p class="section-label animate-on-scroll">Premium Experience</p>
+                <h2 class="font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-4 animate-on-scroll">
+                    A Comfortable & <span class="gold-text">Premium Event</span>
+                </h2>
+                <div class="gold-divider my-4"></div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+                <div class="glass-card p-6 text-center animate-on-scroll">
+                    <div style="width:56px;height:56px;background:rgba(212,168,67,0.1);border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                    </div>
+                    <h4 class="font-bold text-sm mb-2">Hospitality</h4>
+                    <p class="text-white/40 text-xs">Premium refreshments throughout</p>
+                </div>
+                <div class="glass-card p-6 text-center animate-on-scroll">
+                    <div style="width:56px;height:56px;background:rgba(212,168,67,0.1);border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                    </div>
+                    <h4 class="font-bold text-sm mb-2">Guided Consultation</h4>
+                    <p class="text-white/40 text-xs">Personalized guidance sessions</p>
+                </div>
+                <div class="glass-card p-6 text-center animate-on-scroll">
+                    <div style="width:56px;height:56px;background:rgba(212,168,67,0.1);border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <h4 class="font-bold text-sm mb-2">Networking</h4>
+                    <p class="text-white/40 text-xs">Comfortable networking environment</p>
+                </div>
+                <div class="glass-card p-6 text-center animate-on-scroll">
+                    <div style="width:56px;height:56px;background:rgba(212,168,67,0.1);border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h4 class="font-bold text-sm mb-2">Dedicated Support</h4>
+                    <p class="text-white/40 text-xs">Assistance throughout the event</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHATSAPP CTA SECTION -->
+    <section class="py-12 sm:py-16 section-gradient">
+        <div class="max-w-3xl mx-auto px-4">
+            <div class="glass-card p-6 sm:p-10 text-center animate-on-scroll">
+                <div style="width:64px;height:64px;background:rgba(37,211,102,0.15);border-radius:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </div>
+                <h3 class="font-display text-xl sm:text-2xl font-bold mb-3">Need Quick Details Before Registering?</h3>
+                <p class="text-white/50 text-sm mb-6">Talk directly with our team & get project details, event information, offer eligibility & investor guidance.</p>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://wa.me/918796951483?text=Hi%2C%20I%20need%20quick%20details%20about%20the%20Jammu%20Property%20Meet%202026.%20Please%20share%20event%20information%20and%20project%20details." 
+                       target="_blank" 
+                       class="btn-whatsapp" style="padding:16px 36px;">
+                        📞 WhatsApp: +91 87969 51483
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REGISTRATION FORM SECTION -->
+    <section id="register" class="py-16 sm:py-20 md:py-24 relative">
+        <div style="position:absolute;inset:0;">
+            <img src="https://image.qwenlm.ai/public_source/8424d21f-a0f2-46d1-baba-42d9fee7e629/1c29761ba-6d90-4922-914f-092e01dfea7c.png" 
+                 alt="Background" 
+                 style="width:100%;height:100%;object-fit:cover;opacity:0.08;"
+                 onerror="this.style.display='none'">
+            <div style="position:absolute;inset:0;background:linear-gradient(180deg, var(--navy) 0%, var(--navy-light) 50%, var(--navy) 100%);"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-2xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <p class="section-label animate-on-scroll">Reserve Your Access</p>
+                <h2 class="font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-4 animate-on-scroll">
+                    Your Next Big Investment<br><span class="gold-text">Decision Could Start Here</span>
+                </h2>
+                <div class="gold-divider my-4"></div>
+                <p class="text-white/50 text-sm animate-on-scroll">Fill in your details to secure your spot at this exclusive event.</p>
+            </div>
+
+            <!-- Multi-Step Form -->
+            <div class="glass-card p-6 sm:p-10 animate-on-scroll" id="form-container">
+                <!-- Step Indicators -->
+                <div class="flex items-center justify-center gap-3 mb-8">
+                    <div class="step-indicator active" id="step-dot-1"></div>
+                    <div class="step-indicator" id="step-dot-2"></div>
+                    <div class="step-indicator" id="step-dot-3"></div>
+                </div>
+
+                <!-- Step 1: Name & Phone -->
+                <div id="form-step-1" class="form-step">
+                    <div class="text-center mb-6">
+                        <h3 class="font-display text-lg font-bold mb-1">Let's Get Started</h3>
+                        <p class="text-white/40 text-sm">Tell us who you are</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <input type="text" id="form-name" class="form-input" placeholder="Your Full Name" required>
+                        </div>
+                        <div>
+                            <input type="tel" id="form-phone" class="form-input" placeholder="Phone Number" required>
+                        </div>
+                    </div>
+                    <button onclick="nextStep(2)" class="btn-gold w-full mt-6" style="padding:16px;">
+                        Continue →
+                    </button>
+                </div>
+
+                <!-- Step 2: Budget -->
+                <div id="form-step-2" class="form-step" style="display:none;">
+                    <div class="text-center mb-6">
+                        <h3 class="font-display text-lg font-bold mb-1">Investment Budget</h3>
+                        <p class="text-white/40 text-sm">Help us find the right opportunities for you</p>
+                    </div>
+                    <div class="space-y-3">
+                        <label class="budget-option glass-card p-4 flex items-center gap-3 cursor-pointer" style="border-color:rgba(212,168,67,0.15);">
+                            <input type="radio" name="budget" value="10L-25L" class="hidden">
+                            <div style="width:20px;height:20px;border:2px solid rgba(212,168,67,0.3);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                <div style="width:10px;height:10px;background:var(--gold);border-radius:50%;display:none;" class="radio-dot"></div>
+                            </div>
+                            <span class="text-white/80 text-sm font-medium">₹10L – ₹25L</span>
+                        </label>
+                        <label class="budget-option glass-card p-4 flex items-center gap-3 cursor-pointer" style="border-color:rgba(212,168,67,0.15);">
+                            <input type="radio" name="budget" value="25L-50L" class="hidden">
+                            <div style="width:20px;height:20px;border:2px solid rgba(212,168,67,0.3);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                <div style="width:10px;height:10px;background:var(--gold);border-radius:50%;display:none;" class="radio-dot"></div>
+                            </div>
+                            <span class="text-white/80 text-sm font-medium">₹25L – ₹50L</span>
+                        </label>
+                        <label class="budget-option glass-card p-4 flex items-center gap-3 cursor-pointer" style="border-color:rgba(212,168,67,0.15);">
+                            <input type="radio" name="budget" value="50L+" class="hidden">
+                            <div style="width:20px;height:20px;border:2px solid rgba(212,168,67,0.3);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                <div style="width:10px;height:10px;background:var(--gold);border-radius:50%;display:none;" class="radio-dot"></div>
+                            </div>
+                            <span class="text-white/80 text-sm font-medium">₹50L+</span>
+                        </label>
+                    </div>
+                    <div class="flex gap-3 mt-6">
+                        <button onclick="prevStep(1)" class="btn-outline flex-1" style="padding:14px;">
+                            ← Back
+                        </button>
+                        <button onclick="nextStep(3)" class="btn-gold flex-1" style="padding:14px;">
+                            Continue →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Interest -->
+                <div id="form-step-3" class="form-step" style="display:none;">
+                    <div class="text-center mb-6">
+                        <h3 class="font-display text-lg font-bold mb-1">Interested In</h3>
+                        <p class="text-white/40 text-sm">Select your preferred investment location</p>
+                    </div>
+                    <div class="space-y-3">
+                        <label class="interest-option glass-card p-4 flex items-center gap-3 cursor-pointer" style="border-color:rgba(212,168,67,0.15);">
+                            <input type="checkbox" name="interest" value="Noida" class="hidden">
+                            <div style="width:20px;height:20px;border:2px solid rgba(212,168,67,0.3);border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="3" style="display:none;" class="check-icon"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <span class="text-white/80 text-sm font-medium">Noida</span>
+                        </label>
+                        <label class="interest-option glass-card p-4 flex items-center gap-3 cursor-pointer" style="border-color:rgba(212,168,67,0.15);">
+                            <input type="checkbox" name="interest" value="Greater Noida" class="hidden">
+                            <div style="width:20px;height:20px;border:2px solid rgba(212,168,67,0.3);border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="3" style="display:none;" class="check-icon"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <span class="text-white/80 text-sm font-medium">Greater Noida</span>
+                        </label>
+                        <label class="interest-option glass-card p-4 flex items-center gap-3 cursor-pointer" style="border-color:rgba(212,168,67,0.15);">
+                            <input type="checkbox" name="interest" value="Dholera" class="hidden">
+                            <div style="width:20px;height:20px;border:2px solid rgba(212,168,67,0.3);border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="3" style="display:none;" class="check-icon"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <span class="text-white/80 text-sm font-medium">Dholera</span>
+                        </label>
+                        <label class="interest-option glass-card p-4 flex items-center gap-3 cursor-pointer" style="border-color:rgba(212,168,67,0.15);">
+                            <input type="checkbox" name="interest" value="Just Exploring" class="hidden">
+                            <div style="width:20px;height:20px;border:2px solid rgba(212,168,67,0.3);border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="3" style="display:none;" class="check-icon"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <span class="text-white/80 text-sm font-medium">Just Exploring</span>
+                        </label>
+                    </div>
+                    <div class="flex gap-3 mt-6">
+                        <button onclick="prevStep(2)" class="btn-outline flex-1" style="padding:14px;">
+                            ← Back
+                        </button>
+                        <button onclick="submitForm()" class="btn-gold flex-1" style="padding:14px;">
+                            ✅ Confirm Registration
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Success State -->
+                <div id="form-success" style="display:none;" class="text-center py-8">
+                    <div class="success-check">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold mb-3">Registration Confirmed! 🎉</h3>
+                    <p class="text-white/60 mb-6">You're now part of the investor community. Redirecting to WhatsApp...</p>
+                    <div style="width:40px;height:40px;border:3px solid rgba(212,168,67,0.2);border-top-color:var(--gold);border-radius:50%;margin:0 auto;animation:spinSlow 1s linear infinite;"></div>
+                </div>
+            </div>
+
+            <p class="text-center text-white/30 text-xs mt-6">By registering, you agree to receive event updates via WhatsApp.</p>
+        </div>
+    </section>
+
+    <!-- FINAL CTA SECTION -->
+    <section class="py-16 sm:py-20 section-gradient relative overflow-hidden">
+        <div style="position:absolute;inset:0;">
+            <img src="https://image.qwenlm.ai/public_source/8424d21f-a0f2-46d1-baba-42d9fee7e629/15fbd1086-d4ea-4ee8-9ece-3bc8a5f97be3.png" 
+                 alt="Diamond" 
+                 style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:400px;height:400px;object-fit:contain;opacity:0.04;"
+                 onerror="this.style.display='none'">
+        </div>
+        <div class="relative z-10 max-w-3xl mx-auto px-4 text-center">
+            <div class="animate-on-scroll">
+                <h2 class="font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
+                    Your Next Big Investment Decision<br><span class="gold-text">Could Start Here</span>
+                </h2>
+                <div class="gold-divider my-6"></div>
+                <p class="text-white/50 mb-8 max-w-xl mx-auto">Don't miss this exclusive opportunity to explore premium real estate investments in India's fastest-growing corridors.</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#register" class="btn-gold w-full sm:w-auto" style="padding:18px 48px;font-size:1.05rem;">
+                        🎟 Reserve My Seat
+                    </a>
+                    <a href="https://wa.me/918796951483?text=Hi%2C%20I%20need%20details%20about%20the%20Jammu%20Property%20Meet%202026." 
+                       target="_blank" 
+                       class="btn-outline w-full sm:w-auto" style="padding:16px 36px;">
+                         Get Event Pass
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-10 border-t" style="border-color:rgba(212,168,67,0.1);">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-3">
+                    <div style="width:32px;height:32px;">
+                        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 2L32 10V26L18 34L4 26V10L18 2Z" stroke="#d4a843" stroke-width="1.5" fill="none"/>
+                            <path d="M18 8L26 13V23L18 28L10 23V13L18 8Z" stroke="#d4a843" stroke-width="1" fill="none" opacity="0.6"/>
+                            <path d="M18 14L22 17V21L18 24L14 21V17L18 14Z" fill="#d4a843" opacity="0.4"/>
+                        </svg>
+                    </div>
+                    <span class="font-display text-white font-bold">BookMyAcre</span>
+                </div>
+                <div class="text-white/30 text-xs text-center">
+                    <p>Jammu Property Buyer Meet 2026 | Zone By The Park, Jammu</p>
+                    <p class="mt-1">31st May 2026 | 11 AM – 7 PM</p>
+                </div>
+                <div class="text-white/30 text-xs">
+                    <p>© 2026 BookMyAcre. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY WHATSAPP BUTTON -->
+    <a href="https://wa.me/918796951483?text=Hi%2C%20I%20need%20details%20about%20the%20Jammu%20Property%20Meet%202026.%20Please%20share%20event%20information." 
+       target="_blank" 
+       class="sticky-whatsapp"
+       id="sticky-whatsapp"
+       style="display:none;">
+        <div style="position:relative;">
+            <div style="position:absolute;inset:-4px;border-radius:50%;background:rgba(37,211,102,0.3);animation:ripple 2s infinite;"></div>
+            <div style="background:#25D366;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.4);">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+        </div>
+        <div style="position:absolute;bottom:100%;right:0;margin-bottom:10px;background:var(--navy-light);border:1px solid rgba(212,168,67,0.2);border-radius:10px;padding:10px 14px;white-space:nowrap;box-shadow:0 4px 20px rgba(0,0,0,0.3);">
+            <p style="font-size:0.75rem;color:var(--white);font-weight:600;">Need Quick Details?</p>
+            <p style="font-size:0.65rem;color:rgba(255,255,255,0.5);">Chat with our team</p>
+        </div>
+    </a>
+
+    <!-- EXIT INTENT POPUP -->
+    <div id="exit-popup" class="popup-overlay" style="display:none;">
+        <div class="popup-card">
+            <button onclick="closePopup()" style="position:absolute;top:16px;right:16px;background:none;border:none;color:rgba(255,255,255,0.4);cursor:pointer;font-size:1.5rem;line-height:1;">&times;</button>
+            
+            <div class="text-center">
+                <div style="width:56px;height:56px;background:rgba(212,168,67,0.15);border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                </div>
+                <h3 class="font-display text-xl font-bold mb-3">Before You Leave… 👀</h3>
+                <p class="text-white/60 text-sm mb-6 leading-relaxed">
+                    Registrations are active for <strong class="text-white">Jammu Property Meet 2026</strong><br>
+                    Premium investment opportunities • Exclusive event-only offers • Limited registrations
+                </p>
+                <a href="#register" onclick="closePopup()" class="btn-gold w-full" style="padding:16px;display:block;text-align:center;margin-bottom:12px;">
+                    ✅ Reserve Your Access Now
+                </a>
+                <a href="https://wa.me/918796951483?text=Hi%2C%20I%20need%20details%20about%20the%20Jammu%20Property%20Meet%202026." 
+                   target="_blank"
+                   class="btn-whatsapp w-full" style="padding:14px;display:block;text-align:center;font-size:0.9rem;">
+                    💬 Chat On WhatsApp
+                </a>
+                <p class="text-white/30 text-xs mt-4">Limited spots available. Don't miss out.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ===================== COUNTDOWN TIMER =====================
+        const eventDate = new Date('2026-05-31T11:00:00+05:30');
+        
+        function updateCountdown() {
+            const now = new Date();
+            const diff = eventDate - now;
+            
+            if (diff <= 0) {
+                document.getElementById('countdown-days').textContent = '00';
+                document.getElementById('countdown-hours').textContent = '00';
+                document.getElementById('countdown-minutes').textContent = '00';
+                document.getElementById('countdown-seconds').textContent = '00';
+                return;
+            }
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('countdown-days').textContent = String(days).padStart(2, '0');
+            document.getElementById('countdown-hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('countdown-minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('countdown-seconds').textContent = String(seconds).padStart(2, '0');
+        }
+        
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // ===================== SCROLL ANIMATIONS =====================
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 100);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+        // ===================== NAVBAR SCROLL EFFECT =====================
+        let lastScroll = 0;
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                navbar.style.background = 'rgba(10, 22, 40, 0.95)';
+                navbar.style.backdropFilter = 'blur(20px)';
+                navbar.style.borderBottom = '1px solid rgba(212, 168, 67, 0.1)';
+                navbar.style.padding = '10px 0';
+            } else {
+                navbar.style.background = 'transparent';
+                navbar.style.backdropFilter = 'none';
+                navbar.style.borderBottom = 'none';
+                navbar.style.padding = '16px 0';
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // ===================== STICKY WHATSAPP =====================
+        const stickyWhatsApp = document.getElementById('sticky-whatsapp');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 600) {
+                stickyWhatsApp.style.display = 'block';
+            } else {
+                stickyWhatsApp.style.display = 'none';
+            }
+        });
+
+        // ===================== EXIT INTENT POPUP =====================
+        let popupShown = false;
+        
+        document.addEventListener('mouseout', (e) => {
+            if (e.clientY <= 0 && !popupShown) {
+                document.getElementById('exit-popup').style.display = 'flex';
+                popupShown = true;
+            }
+        });
+        
+        function closePopup() {
+            document.getElementById('exit-popup').style.display = 'none';
+        }
+        
+        // Close popup on overlay click
+        document.getElementById('exit-popup').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('exit-popup')) {
+                closePopup();
+            }
+        });
+
+        // ===================== MOBILE MENU =====================
+        function openModal() {
+            document.getElementById('mobile-menu').style.display = 'block';
+        }
+        
+        function closeMobileMenu() {
+            document.getElementById('mobile-menu').style.display = 'none';
+        }
+
+        // ===================== MULTI-STEP FORM =====================
+        let currentStep = 1;
+        let formData = {
+            name: '',
+            phone: '',
+            budget: '',
+            interest: []
+        };
+
+        function nextStep(step) {
+            // Validate current step
+            if (currentStep === 1) {
+                const name = document.getElementById('form-name').value.trim();
+                const phone = document.getElementById('form-phone').value.trim();
+                
+                if (!name) {
+                    document.getElementById('form-name').style.borderColor = '#e74c3c';
+                    document.getElementById('form-name').focus();
+                    return;
+                }
+                if (!phone || phone.length < 10) {
+                    document.getElementById('form-phone').style.borderColor = '#e74c3c';
+                    document.getElementById('form-phone').focus();
+                    return;
+                }
+                
+                formData.name = name;
+                formData.phone = phone;
+            }
+            
+            if (currentStep === 2) {
+                const selectedBudget = document.querySelector('input[name="budget"]:checked');
+                if (!selectedBudget) {
+                    return;
+                }
+                formData.budget = selectedBudget.value;
+            }
+            
+            // Hide current step
+            document.getElementById('form-step-' + currentStep).style.display = 'none';
+            
+            // Show next step
+            document.getElementById('form-step-' + step).style.display = 'block';
+            
+            // Update dots
+            document.getElementById('step-dot-' + currentStep).classList.remove('active');
+            document.getElementById('step-dot-' + currentStep).classList.add('completed');
+            document.getElementById('step-dot-' + step).classList.add('active');
+            
+            currentStep = step;
+        }
+
+        function prevStep(step) {
+            document.getElementById('form-step-' + currentStep).style.display = 'none';
+            document.getElementById('form-step-' + step).style.display = 'block';
+            
+            document.getElementById('step-dot-' + currentStep).classList.remove('active');
+            document.getElementById('step-dot-' + step).classList.remove('completed');
+            document.getElementById('step-dot-' + step).classList.add('active');
+            
+            currentStep = step;
+        }
+
+        function submitForm() {
+            // Get selected interests
+            const selectedInterests = [];
+            document.querySelectorAll('input[name="interest"]:checked').forEach(cb => {
+                selectedInterests.push(cb.value);
+            });
+            formData.interest = selectedInterests.length > 0 ? selectedInterests : ['General'];
+            
+            // Show success
+            document.getElementById('form-step-3').style.display = 'none';
+            document.getElementById('form-success').style.display = 'block';
+            document.getElementById('step-dot-3').classList.remove('active');
+            document.getElementById('step-dot-3').classList.add('completed');
+            
+            // Redirect to WhatsApp after delay
+            setTimeout(() => {
+                const message = encodeURIComponent(
+                    `Hi! I've registered for the Jammu Property Meet 2026.\n\n` +
+                    `Name: ${formData.name}\n` +
+                    `Phone: ${formData.phone}\n` +
+                    `Budget: ${formData.budget}\n` +
+                    `Interested In: ${formData.interest.join(', ')}\n\n` +
+                    `I'd like to join the community WhatsApp channel for event updates.`
+                );
+                window.open(`https://wa.me/918796951483?text=${message}`, '_blank');
+            }, 2000);
+        }
+
+        // ===================== BUDGET RADIO BUTTONS =====================
+        document.querySelectorAll('input[name="budget"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                // Reset all
+                document.querySelectorAll('.budget-option').forEach(opt => {
+                    opt.style.borderColor = 'rgba(212,168,67,0.15)';
+                    opt.style.background = 'rgba(255,255,255,0.03)';
+                });
+                document.querySelectorAll('.budget-option .radio-dot').forEach(dot => {
+                    dot.style.display = 'none';
+                });
+                
+                // Highlight selected
+                this.closest('.budget-option').style.borderColor = 'var(--gold)';
+                this.closest('.budget-option').style.background = 'rgba(212,168,67,0.08)';
+                this.closest('.budget-option').querySelector('.radio-dot').style.display = 'block';
+            });
+        });
+
+        // ===================== INTEREST CHECKBOXES =====================
+        document.querySelectorAll('input[name="interest"]').forEach(cb => {
+            cb.addEventListener('change', function() {
+                if (this.checked) {
+                    this.closest('.interest-option').style.borderColor = 'var(--gold)';
+                    this.closest('.interest-option').style.background = 'rgba(212,168,67,0.08)';
+                    this.closest('.interest-option').querySelector('.check-icon').style.display = 'block';
+                } else {
+                    this.closest('.interest-option').style.borderColor = 'rgba(212,168,67,0.15)';
+                    this.closest('.interest-option').style.background = 'rgba(255,255,255,0.03)';
+                    this.closest('.interest-option').querySelector('.check-icon').style.display = 'none';
+                }
+            });
+        });
+
+        // ===================== PARTICLES =====================
+        const canvas = document.getElementById('particles-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+        
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+            
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 0.5;
+                this.speedY = -Math.random() * 0.3 - 0.1;
+                this.speedX = (Math.random() - 0.5) * 0.2;
+                this.opacity = Math.random() * 0.4 + 0.1;
+                this.fadeSpeed = Math.random() * 0.005 + 0.002;
+                this.growing = Math.random() > 0.5;
+            }
+            
+            update() {
+                this.y += this.speedY;
+                this.x += this.speedX;
+                
+                if (this.growing) {
+                    this.opacity += this.fadeSpeed;
+                    if (this.opacity >= 0.5) this.growing = false;
+                } else {
+                    this.opacity -= this.fadeSpeed;
+                    if (this.opacity <= 0.05) this.growing = true;
+                }
+                
+                if (this.y < -10 || this.x < -10 || this.x > canvas.width + 10) {
+                    this.reset();
+                    this.y = canvas.height + 10;
+                }
+            }
+            
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(212, 168, 67, ${this.opacity})`;
+                ctx.fill();
+            }
+        }
+        
+        // Create particles
+        for (let i = 0; i < 50; i++) {
+            particles.push(new Particle());
+        }
+        
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            requestAnimationFrame(animateParticles);
+        }
+        
+        animateParticles();
+
+        // ===================== INPUT FOCUS EFFECTS =====================
+        document.querySelectorAll('.form-input').forEach(input => {
+            input.addEventListener('focus', function() {
+                this.style.borderColor = 'var(--gold)';
+            });
+            input.addEventListener('blur', function() {
+                this.style.borderColor = 'rgba(212, 168, 67, 0.2)';
+            });
+        });
+
+        // ===================== SMOOTH SCROLL FOR ANCHOR LINKS =====================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // ===================== TRIGGER EXIT POPUP ON BACK BUTTON (Mobile) =====================
+        let backButtonShown = false;
+        window.addEventListener('popstate', () => {
+            if (!backButtonShown) {
+                document.getElementById('exit-popup').style.display = 'flex';
+                popupShown = true;
+                backButtonShown = true;
+                history.pushState(null, '', window.location.href);
+            }
+        });
+        history.pushState(null, '', window.location.href);
+    </script>
+</body>
+</html>
+

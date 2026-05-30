@@ -50,9 +50,11 @@ body {
 ::-webkit-scrollbar {
   width: 6px;
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--primary);
 }
+
 ::selection {
   background-color: var(--primary);
   color: #fff;
@@ -116,6 +118,7 @@ img {
 .text-primary {
   color: var(--primary);
 }
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -142,6 +145,7 @@ img {
   cursor: pointer;
   transition: all var(--transition);
 }
+
 .btn::after {
   content: "";
   position: absolute;
@@ -158,6 +162,7 @@ img {
     opacity 0.4s ease;
   pointer-events: none;
 }
+
 .btn:active::after {
   transform: translate(-50%, -50%) scale(1);
   opacity: 0;
@@ -165,15 +170,18 @@ img {
     transform 0s,
     opacity 0.3s ease;
 }
+
 .btn:hover {
   background: var(--primary);
   color: var(--white);
 }
+
 /* Ripple effect: attach `.btn--ripple` to enable */
 .btn--ripple {
   position: relative;
   overflow: hidden;
 }
+
 .btn--ripple::after {
   content: "";
   position: absolute;
@@ -186,23 +194,28 @@ img {
     opacity 0.6s ease;
   pointer-events: none;
 }
+
 .btn--ripple:active::after {
   transform: scale(6);
   opacity: 0;
   transition: 0s;
 }
+
 .btn-filled {
   background: var(--primary);
   color: var(--white);
 }
+
 .btn-filled:hover {
   background: var(--primary-dark);
   border-color: var(--primary-dark);
 }
+
 .btn-white {
   border-color: #fff;
   color: #fff;
 }
+
 .btn-white:hover {
   background: #fff;
   color: var(--text);
@@ -212,14 +225,17 @@ img {
 .section {
   padding: 6rem 0;
 }
+
 .section-header {
   text-align: center;
   margin-bottom: 3.5rem;
   position: relative;
 }
+
 .section-header h2 {
   margin-bottom: 0.75rem;
 }
+
 .section-divider {
   width: 50px;
   height: 2px;
@@ -238,10 +254,12 @@ img {
   z-index: 9999;
   transition: opacity 0.6s ease;
 }
+
 .loader-overlay.hidden {
   opacity: 0;
   pointer-events: none;
 }
+
 .loader-spinner {
   width: 50px;
   height: 50px;
@@ -250,6 +268,7 @@ img {
   border-radius: 50%;
   animation: spin 0.9s linear infinite;
 }
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -265,22 +284,23 @@ img {
   align-items: flex-end;
   padding-bottom: 3rem;
   position: relative;
-  background-position:top; 
+  background-position: top;
 }
+
 .page-hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.75) 0%,
-    rgba(0, 0, 0, 0.3) 100%
-  );
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0.3) 100%);
 }
+
 .page-hero .container {
   position: relative;
   z-index: 1;
 }
+
 .page-hero h1 {
   color: #fff;
   font-size: clamp(2rem, 5vw, 3.5rem);
@@ -292,18 +312,23 @@ img {
   transform: translateY(24px);
   animation: fadeUp 0.7s ease forwards;
 }
+
 .fade-in-delay-1 {
   animation-delay: 0.1s;
 }
+
 .fade-in-delay-2 {
   animation-delay: 0.2s;
 }
+
 .fade-in-delay-3 {
   animation-delay: 0.3s;
 }
+
 .fade-in-delay-4 {
   animation-delay: 0.4s;
 }
+
 @keyframes fadeUp {
   to {
     opacity: 1;
@@ -316,6 +341,7 @@ img {
   .section {
     padding: 4rem 0;
   }
+
   h2 {
     font-size: 1.4rem;
     letter-spacing: 0.1em;
@@ -339,10 +365,12 @@ img {
   transition: all 0.3s ease;
   color: #fff;
 }
+
 .whatsapp-fab:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
 }
+
 .whatsapp-fab i {
   font-size: 1.5rem;
   line-height: 1;

@@ -106,13 +106,13 @@ export default function ContactForm() {
         setStatus("error");
         setMessage(
           result.message ||
-            "Unable to send your message. Please try again or call +91 8796951483.",
+          "Unable to send your message. Please try again or call +91 8796951483.",
         );
       } else {
         setStatus("success");
         setMessage(
           result.message ||
-            "Thank you! Your message has been sent successfully.",
+          "Thank you! Your message has been sent successfully.",
         );
         setForm({
           name: "",
