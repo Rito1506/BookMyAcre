@@ -1,7 +1,9 @@
 import { useState } from "react";
 import "./ContactForm.css";
 
-const MAIL_ENDPOINT = import.meta.env.VITE_MAIL_ENDPOINT || "/api/mail";
+// Get your free key at https://web3forms.com/
+const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY || "";
+const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
 const validateForm = (form) => {
   const errors = {};
@@ -56,7 +58,6 @@ export default function ContactForm() {
   };
 
   const handleSubmit = async (e) => {
-    debugger;
     e.preventDefault();
     setLoading(true);
     setStatus(null);
@@ -76,31 +77,35 @@ export default function ContactForm() {
       return;
     }
 
-    try {
-      const body = new URLSearchParams();
-      Object.entries(form).forEach(([key, value]) => body.append(key, value));
+    if (!WEB3FORMS_KEY) {
+      setStatus("error");
+      setMessage("Form is not configured. Please contact us directly at +91 8796951483.");
+      setLoading(false);
+      return;
+    }
 
-      const response = await fetch(MAIL_ENDPOINT, {
+    try {
+      const payload = {
+        access_key: WEB3FORMS_KEY,
+        name: form.name,
+        email: form.email,
+        phone: form.phone,
+        message: form.message,
+        // Honeypot — Web3Forms will silently discard submissions where this is filled
+        botcheck: form.website,
+        // Customise the email subject line seen in your inbox
+        subject: `New contact from ${form.name || form.email} — BookMyAcre`,
+        // Reply-to so you can hit Reply directly from your email client
+        replyto: form.email,
+      };
+
+      const response = await fetch(WEB3FORMS_ENDPOINT, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: body.toString(),
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(payload),
       });
 
-      const text = await response.text();
-      let result = null;
-      try {
-        result = JSON.parse(text);
-      } catch (parseError) {
-        console.error("Server returned invalid JSON:", response.status, text);
-        setStatus("error");
-        setMessage(
-          `Server returned unexpected response (${response.status}). ${text.trim().slice(0, 200)}`,
-        );
-        setLoading(false);
-        return;
-      }
+      const result = await response.json();
 
       if (!response.ok || !result.success) {
         setStatus("error");
